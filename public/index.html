@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>index</title>
+</head>
+<body>
+  <header class="header">
+        <div class="container headerInside">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <form>
+                <div class="searchBrowse">
+                    Browse <i class="fas fa-caret-down"></i>
+                </div>
+                <input placeholder="Search for Item..." type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+           <img class="headerCart" src="images/cart.png" alt="">
+            <button class="accountBtn">
+                My Account
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+
+            <nav class="topNav">
+                <a href="index.html">HOME</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="catalog.html">CATALOG</a>
+                <a href="shopCart.html">CART</a>
+                <a href="address.html">ADDRESS</a>    
+            </nav>
+     <div class="topBanner">
+        <div class="container topBannerContainer">
+            <div class="topBannerSign">
+                <div class="topSign">
+                    THE BRAND
+                </div>
+                <div class="bottomSign">
+                    OF LUXERIOUS <span>FASHION</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container category">
+        <div class="men">
+           <div class="categoryText">HOT DEAL<br> <span>FOR MEN</span></div>
+        </div>
+        
+        <div class="accesories">
+            <div class="categoryText">LUXIROUS &amp; TRENDY<br><span>ACCESORIES</span>
+            </div>
+        </div>
+        
+        <div class="women">
+            <div class="categoryText">30% OFFER<br> <span>WOMEN</span></div> 
+       </div>
+       
+       <div class="kids">
+            <div class="categoryText">NEW ARRIVALS<br> <span>FOR KIDS</span>
+            </div>
+        </div>
+   
+    </div>
+
+     <main id="app" class="container">
+       <div class="mainHeader">
+         <h3>Fetured items</h3>
+         <p>shop for items based on what we featured in this week</p>
+       </div>
+       
+       <products></products>
+<!--
+        <div class="productsWrap">
+            
+            <div class="product">
+                <img src="img/layer2.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p> <br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer3.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p> <br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer4.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p> <br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer5.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p><br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer6.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p> <br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer7.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p>
+                 <br><span>$52.00</span>
+            </div>
+            <div class="product">
+                <img src="img/layer8.jpg" alt="">
+                <p>MANGO PEOPLE T-SHIRT</p> <br><span>$52.00</span>
+            </div>
+       </div>
+-->
+       <button>Browse ALL Product <i class="fas fa-arrow-right"></i></button>
+    </main> 
+
+     <div class="offer container">
+        <div class="offerBanner">
+           <div class="offerBannerText">
+             <h3>30%<span>OFFER</span></h3>  
+              <p>FOR WOMEN</p>
+           </div>
+        </div>
+        <div class="offerDetails">
+            <div class="offerDetailsDlvr">
+                <h3>Free Delivery</h3>
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </div>
+            <div class="offerDetailsSales" >
+                <h3>Free Delivery</h3>
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </div>
+            <div class="offerDetailsQuality">
+                <h3>Free Delivery</h3>
+                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            </div>
+        </div>
+    </div>
+
+     <div class="subscribeWrap">
+        <div class="container subscribe">
+            <div class="reviews">
+               <img src="img/review.png" alt="foto">
+               <div class="reviewsText">
+                "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium" <br>
+                <span>Bin Burhan </span>
+                <p>Dhaka, Bd </p>
+                    <div class="reviewsSwitch">
+                        <div class="switch"></div>
+                        <div class="switch"></div>
+                        <div class="switch"></div>
+                    </div>
+        
+                </div>
+            </div>
+            
+            <div class="subscribeRight">
+                <div class="subscribeRightText">
+                       <h4>SUBSCRIBE</h4>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                </div>
+                
+                    <form class="subscribeRightForm" action="">
+                        <input type="email" placeholder="Enter your Email">
+                        <input type="submit" value="Subscrib">
+                        </form>
+            </div>
+            
+       </div>
+    </div>
+    <footer class="container">
+        <div class="footerBrand">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <div class="footerBrandText">
+              Objectively trasition extensive data rather than cross functional solution. Monotonectaliy cyndicate multidiscriptinary materials before go forward benefits. Intrinsicly an expanded array of processes and cross unit partnerships.
+            </div>
+            <div  class="footerBrandText">Effici     entiy piagiarize 24/365   action items   and focused infomediaries.     Distinctively seize superior intiatives   for wireless technologies Dynamicaily   optimize.
+            </div>
+            
+        </div>
+        <div class="footerColumn">
+                COMPANY
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class="footerColumn">
+            INFORMATION
+            <a href="#">Tearms &amp; Condition</a>
+            <a href="#">PrivacyPolicy</a>
+            <a href="#">How to Buy</a>
+            <a href="#">How to Sell</a>
+            <a href="#">Promotion</a>
+            
+        </div>
+        <div class="footerColumn">
+            SHOP CATEGORY
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Child</a>
+            <a href="#">Apparel</a>
+            <a href="#">Brows All</a>
+        </div>
+     </footer>
+     
+     <div class="lower">
+      <div class="container copyrightWrap">
+          <div class="copyright"> &copy; 2017 All Rights Reserved
+          </div>
+          <div class="copyrightSocial">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+          </div>
+              
+         </div>
+      </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>

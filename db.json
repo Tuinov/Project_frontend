@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "name": "Ivan Ivanov",
+      "phone": "543543534534",
+      "id": 4,
+      "username": "Ivan",
+      "password": "12345"
+    },
+    {
+      "name": "vasya rem",
+      "phone": "892112333",
+      "id": 5
+    },
+    {
+      "name": "evgen tuin",
+      "phone": "8922554545",
+      "id": 6
+    },
+    {
+      "name": "ret",
+      "phone": "89118497405",
+      "id": 7
+    },
+    {
+      "name": "rut yuo",
+      "phone": "89118497400",
+      "id": 8
+    },
+    {
+      "name": "gena",
+      "phone": "89118497405",
+      "id": 9
+    },
+    {
+      "name": "sasas",
+      "phone": "89117754566",
+      "id": 10
+    },
+    {
+      "name": "sasas",
+      "phone": "89117754566",
+      "id": 11
+    },
+    {
+      "name": "rrrrr",
+      "phone": "89118497465",
+      "id": 12
+    }
+  ],
+  "products": [
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer1.jpg",
+      "id": 1
+    },
+    {
+      "name": "blazer",
+      "price": 259,
+      "color": "blue",
+      "image": "img/layer2.jpg",
+      "id": 2
+    },
+    {
+      "name": "blazer",
+      "price": 259,
+      "color": "blue",
+      "image": "img/layer3.jpg",
+      "id": 3
+    },
+    {
+      "name": "furs",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer4.jpg",
+      "id": 4
+    },
+    {
+      "name": "shirt",
+      "price": 555,
+      "color": "blue",
+      "image": "img/layer5.jpg",
+      "id": 5
+    },
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer6.jpg",
+      "id": 6
+    },
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer7.jpg",
+      "id": 7
+    },
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer8.jpg",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "name": "blazer",
+      "price": 259,
+      "color": "blue",
+      "image": "img/layer2.jpg",
+      "id": 2,
+      "quantity": 3
+    },
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer1.jpg",
+      "id": 1,
+      "quantity": 1
+    },
+    {
+      "name": "bag",
+      "price": 150,
+      "color": "blue",
+      "image": "img/layer8.jpg",
+      "id": 8,
+      "quantity": 2
+    }
+  ]
+}

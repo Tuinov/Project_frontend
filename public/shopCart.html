@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>shopCart</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+  <div  id="apps">
+   <header class="header">
+        <div class="container headerInside">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <form class="searchWrap">
+                <div class="searchBrowse">
+                    Browse <i class="fas fa-caret-down"></i>
+                </div>
+                <input placeholder="Search for Item..." type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <img class="headerCart" src="images/cart.png" alt="">
+            
+            <button class="accountBtn">
+                My Account
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+
+           <nav class="topNav">
+                <a href="index.html">HOME</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="catalog.html">CATALOG</a>
+                <a href="shopCart.html">CART</a>
+                <a href="address.html">ADDRESS</a>  
+            </nav>
+            
+        <div class="arrivals">
+            <div class="container arrivalsWrap">
+                <div class="arrivalsNew">
+                   <a href="">NEW ARRIVALS</a> 
+                </div>
+                <div class="arrivalsLink">
+                    <a href="index.html">HOME</a>/
+                    <a href="#">MEN</a>/
+                    <a href="#">NEW ARRIVALS</a>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="container">
+         
+       
+    <table width="100%" align="center">
+      <tr>
+          <th>PRODUCT DETAILS</th>
+          <th></th>
+          <th>UNITE PRICE</th>
+          <th>QUANTITY</th>
+          <th>SHIPPING</th>
+          <th>SUBTOTAL</th>
+          <th>ACTION</th>
+      </tr>
+      
+       <tr v-for="item in cart" align="center">
+          
+           <td><img id="imgCart" :src="item.image"   height="100"> </td>
+           <td>
+            <div class="description">
+              <h3> {{ item.name }}</h3>
+               <p>Color: <span>Red</span> </p>
+               <p>Size: <span>XII</span> </p>
+            </div> 
+           </td>
+           <td>${{ item.price }}</td>
+           <td>{{ item.quantity}}</td>
+           <td>FREE</td>
+           <td>${{ item.price * item.quantity}}</td>
+           <td><button class="delete" @click="handleDeleteclick(item)"> <img src="img/delete.png" alt=""></button></td>
+     </tr>
+  </table>
+   </div>            
+                       
+        </div> 
+        <div class="container cartButton">
+            
+                <button>CLEAR SHOPPING CART</button>
+            
+                <button>CONTINUE SHOPPING</button>
+        
+        </div>  
+        <div class="container adress">
+            <div class="shipping">
+              <h3>SHIPPING ADRES</h3>
+               <form action="" method="post">
+                <select class="select">
+                      <option>Bangladesh</option>
+                      <option>Russia</option>
+                  </select>
+                 
+                <br>            
+              <input type="text" name="" placeholder="State"><br>
+              <input type="text" name="" placeholder="Postcode / Zip"><br>
+              <input type="button" value="get a quote">
+            </form>
+            </div>
+            <div class="coupon"> <H3>COUPON   discount</H3>
+              <p>Enter your coupon code if you have one</p> <br>
+              <input type="text" name="" placeholder="State"><br>
+              <input type="button" value="Apply coupon">
+            </div>
+            <div class="total">
+             <div class="totalSub">Sub total:          ${{ totalAmount }}
+             </div>
+              <div class="totalGrand">GRAND TOTAL      <span>${{ totalAmount }}</span>
+              </div>
+              
+              <button>proceed to checkout</button>
+              
+            </div>
+        </div>
+        
+        <div class="subscribeWrap">
+        <div class="container subscribe">
+            <div class="reviews">
+               <img src="img/review.png" alt="foto">
+               <div class="reviewsText">
+                "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium" <br>
+                <span>Bin Burhan </span>
+                <p>Dhaka, Bd </p>
+                <div class="reviewsSwitch">
+                    <div class="switch"></div>
+                    <div class="switch"></div>
+                    <div class="switch"></div>
+                </div>
+                <div></div>
+                </div>
+            </div>
+            
+            <div class="subscribeRight">
+                <div class="subscribeRightText">
+                       <h4>SUBSCRIBE</h4>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                </div>
+                
+                    <form class="subscribeRightForm" action="">
+                        <input type="email" placeholder="Enter your Email">
+                        <input type="submit" value="Subscrib">
+                    </form>
+            </div>
+        
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footerBrand">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <div class="footerBrandText">
+              Objectively trasition extensive data rather than cross functional solution. Monotonectaliy cyndicate multidiscriptinary materials before go forward benefits. Intrinsicly an expanded array of processes and cross unit partnerships.
+            </div>
+            <div  class="footerBrandText">Effici     entiy piagiarize 24/365   action items   and focused infomediaries.     Distinctively seize superior intiatives   for wireless technologies Dynamicaily   optimize.
+            </div>
+            
+        </div>
+        <div class="footerColumn">
+                COMPANY
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class="footerColumn">
+            INFORMATION
+            <a href="#">Tearms &amp; Condition</a>
+            <a href="#">PrivacyPolicy</a>
+            <a href="#">How to Buy</a>
+            <a href="#">How to Sell</a>
+            <a href="#">Promotion</a>
+            
+        </div>
+        <div class="footerColumn">
+            SHOP CATEGORY
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Child</a>
+            <a href="#">Apparel</a>
+            <a href="#">Brows All</a>
+        </div>
+     </footer>
+     <div class="lower">
+     
+      <div class="container copyrightWrap">
+          <div class="copyright"> &copy; 2017 All Rights Reserved
+          </div>
+          <div class="copyrightSocial">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+          </div>
+              
+         </div>
+      </div>
+    </div>  
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+      <script src="apps.js"></script>
+    
+</body>
+</html>
